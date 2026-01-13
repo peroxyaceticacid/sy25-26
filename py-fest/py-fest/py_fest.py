@@ -1,6 +1,7 @@
 # WRITTEN BY AIDEN JONES
 
 #// variables
+#
 
 lineup = [] # list of tuples
 running = True
