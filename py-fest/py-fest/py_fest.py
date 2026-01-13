@@ -8,10 +8,11 @@ running = True
 #// functions
 
 def view_lineup():
+    print("\nCurrent Lineup:")
     for n, g, t in lineup:
-        print(f"Band: {n}, Genre: {g}, Duration: {t}m\n")
+        print(f"Band: {n} ({g}) - {t}m")
 
-    print(f"Total Duration: {sum(t for _, _, t in lineup)}m")
+    print(f"Total Duration: {sum(t for _, _, t in lineup)}m\n")
 
 def add_band(name, genre, duration):
     new_band = (name, genre, duration)
@@ -19,31 +20,39 @@ def add_band(name, genre, duration):
     print(f"Added band: {name}\n")
 
 def remove_band(name):
-    if name is str:
-        for band in lineup:
-            if band[0] == name:
-                lineup.remove(band)
-                print(f"Removed band: {name}\n")
-                return
-        print(f"Invalid band.\n")
-    elif name is int:
+
+    try:
+        name = int(name)
         name -= 1  # adjust because user counts from 1
         if 0 <= name < len(lineup):
             removed_band = lineup.pop(name)
             print(f"Removed band: {removed_band[0]}\n")
+    except ValueError:
+        for band in lineup:
+            if band[0] == name: lineup.remove(band); print(f"Removed band: {name}\n"); return
+
+        print(f"Invalid band.\n")
 
 def move_band(name, pos):
+    pos = int(pos)
     pos -= 1 # adjust because user counts from 1.. again
 
-    if name is str:
-        for band in lineup:
-            if band[0] == name:
-                rb = lineup.pop(lineup.index(band))
-                lineup.insert(pos, rb)
-    elif name is int:
+    try:
+        name = int(name)
         name -= 1  # adjust because user counts from 1.. last time
         rb = lineup.pop(name)
         lineup.insert(pos, rb)
+    except ValueError:
+        for band in lineup:
+            if band[0] != name: break
+            
+            rb = lineup.pop(lineup.index(band))
+            lineup.insert(pos, rb)
+
+def exit_program():
+    global running
+    running = False
+    print("Exiting")
 
 #// menu setup
 
@@ -53,7 +62,17 @@ menu_options = {
         input("Name: "),
         input("Genre: "),
         int(input("Duration: "))
-    ),}
+    ),
+    3: lambda: move_band(1, len(lineup)),
+    4: lambda: remove_band(
+        input("Name or position: ")
+    ),
+    5: lambda: move_band(
+        input("Name or position: "),
+        input("Position: ")
+    ),
+    6: exit_program,
+    }
 
 #// main loop
 
@@ -62,11 +81,14 @@ while running:
     1. View lineup and total time
     2. Add a new band
     3. Move first band to end
-    4. Remove band by name
+    4. Remove band by name or position
     5. Move band to specific position
     6. Exit""")
-    choice = int(input("Choose an option (1-6): "))
+    choice = input("Choose an option (1-6): ")
 
-    if choice is not int or choice < 1 or choice > 6:
-        print("Invalid\n")
-        continue
+    if not (1 <= int(choice) <= 6): print("Invalid\n"); continue
+
+    menu_option = menu_options.get(int(choice))
+    if menu_option: menu_option(); continue
+    
+    print("Not an option. Try again")
