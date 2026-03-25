@@ -1,7 +1,6 @@
 # WRITTEN BY AIDEN JONES
 
 #// variables
-#
 
 lineup = [] # list of tuples
 running = True
@@ -21,7 +20,6 @@ def add_band(name, genre, duration):
     print(f"Added band: {name}\n")
 
 def remove_band(name):
-
     try:
         name = int(name)
         name -= 1  # adjust because user counts from 1

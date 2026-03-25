@@ -1,0 +1,72 @@
+{
+  "talents": [
+    {
+      "Spine Cutter": "Hitting an enemy in the back after a roll cancel will initiate a second slash that deals your weapon's raw damage.",
+      "Concussion": "Enemies you flourish into walls have their vision altered for a short duration and are dazed longer than usual. Flourished PvE enemies get Stagger for a few seconds.",
+      "Concussive Force": "Enemies you knocked remain downed longer than usual.",
+      "Precise Swing": "After landing a critical your next basic attack will gain 25% chip past your opponent's block.",
+      "Endurance Runner": "Even when things look dire, you still have it in you to keep your legs moving.",
+      "Scaredy Cat": "When enemies initiate a fight first, gain a speed boost.",
+      "Conditioned Runner": "You regenerate health faster than normal when sprinting below 75% HP. The health amount scales with your agility stat."
+    }
+  ],
+  "mantras": [
+    {
+      "Abyssal Ridge": "https://static.wikia.nocookie.net/project-deepwoken/images/f/ff/Abyssal_ridge.gif/revision/latest?cb=20240618205950",
+      "Abyssal Tendrils": "https://static.wikia.nocookie.net/project-deepwoken/images/d/d0/Abyssal_Tendrils.gif/revision/latest?cb=20260219233225",
+      "Brachial Spear": "https://static.wikia.nocookie.net/project-deepwoken/images/6/68/Brachial_Spear.gif/revision/latest?cb=20240618205719",
+      "Coral Spear": "https://static.wikia.nocookie.net/project-deepwoken/images/5/55/Coral_Spear.gif/revision/latest?cb=20240618210211",
+      "Dread Breath": "https://static.wikia.nocookie.net/project-deepwoken/images/c/c2/Dread_Breath.gif/revision/latest?cb=20240706154859",
+      "Mecha Gatling": "https://static.wikia.nocookie.net/project-deepwoken/images/9/9d/Mecha_Gatling.gif/revision/latest?cb=20240618210143",
+      "Whirling Blade": "https://static.wikia.nocookie.net/project-deepwoken/images/7/7b/Whirling_Blade.gif/revision/latest?cb=20240618210047",
+      "Bone Wisp": "https://static.wikia.nocookie.net/project-deepwoken/images/1/1d/Bone_Wisp.gif/revision/latest?cb=20260217202622",
+      "Enforcer Pull": "https://static.wikia.nocookie.net/project-deepwoken/images/3/32/Enforcer_Pull.gif/revision/latest?cb=20240618205828"
+    }
+  ],
+  "armor": [
+    "Arachnid's Weave",
+    "Black Diver",
+    "Cala-Mariner",
+    "Celtorian Tideknight",
+    "Darkened Bastion",
+    "Ignition Deepdelver",
+    "Justicar's Armor",
+    "Legion Centurion",
+    "Navaen War Chief",
+    "Prophet's Cloak",
+    "Royal Etrean Guard",
+    "Summer Dragoon",
+    "Titanslayer's Adornment",
+    "Titus's Raiment",
+    "Windrunner Robes"
+  ],
+  "oaths": [
+    "Oathless",
+    "Visionshaper",
+    "Arcwarder",
+    "Bladeharper",
+    "Blightsurger",
+    "Blindseer",
+    "Chainwarden",
+    "Contractor",
+    "Dawnwalker",
+    "Fadetrimmer",
+    "Jetstriker",
+    "Linkstrider",
+    "Saintsworn",
+    "Saltchemist",
+    "Silentheart",
+    "Soulbreaker",
+    "Starkindred"
+  ],
+  "attunements": [
+    "Flamecharm",
+    "Shadowcast",
+    "Thundercall",
+    "Frostdraw",
+    "Galebreathe",
+    "Attunementless",
+    "Ironsing",
+    "Bloodrend"
+  ]
+}

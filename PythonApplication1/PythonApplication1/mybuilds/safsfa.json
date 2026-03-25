@@ -1,0 +1,20 @@
+{
+  "stats": {
+    "strength": 0,
+    "fortitude": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "charisma": 0,
+    "willpower": 0
+  },
+  "talents": [],
+  "mantras": [
+    "Abyssal Ridge",
+    "Abyssal Tendrils",
+    "Brachial Spear",
+    "Dread Breath"
+  ],
+  "oath": "",
+  "attunement": "",
+  "armor": ""
+}

@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "strength": 330,
+    "fortitude": 0,
+    "agility": 0,
+    "intelligence": 0,
+    "charisma": 0,
+    "willpower": 0
+  },
+  "talents": [],
+  "mantras": [
+    "Abyssal Ridge",
+    "Abyssal Tendrils",
+    "Brachial Spear",
+    "Coral Spear",
+    "Dread Breath",
+    "Mecha Gatling",
+    "Whirling Blade",
+    "Bone Wisp",
+    "Enforcer Pull"
+  ],
+  "oath": "Fadetrimmer",
+  "attunement": "Ironsing",
+  "armor": "Royal Etrean Guard"
+}
